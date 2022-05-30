@@ -1,0 +1,21 @@
+$color-white: #fff;
+$color-white-t6: rgba(255, 255, 255, 0.6);
+$color-white-t5: rgba(255, 255, 255, 0.5);
+$color-white-t3: rgba(255, 255, 255, 0.33);
+
+$color-grey: #c4c4c426;
+$color-black: #121212;
+
+$color-input: #373737;
+
+$color-primary: #00a955;
+$color-secondary: #23f38d;
+
+$color-btnshadow: #13e07a;
+
+$bg-hue: radial-gradient(
+  rgba($color-secondary, 0.329),
+  rgba($color-secondary, 0.325),
+  rgba($color-secondary, 0.322),
+  rgba($color-secondary, 0.318)
+);

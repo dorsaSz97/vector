@@ -1,0 +1,58 @@
+@use '../abstracts' as *;
+
+body {
+  font-family: 'Montserrat';
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 1;
+  color: $color-white;
+  background-color: $color-black;
+}
+
+// Headings
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Quadrat';
+  font-weight: 300;
+  text-transform: uppercase;
+  color: $color-white;
+}
+
+.heading-primary {
+  font-size: 7.2rem;
+  line-height: 1.08;
+}
+
+.heading-secondary {
+  font-size: 5.8rem;
+  line-height: 1.17;
+}
+
+.heading-tertiary {
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+
+.subheading {
+  font-weight: 700;
+  color: $color-primary;
+  font-size: 1.2rem;
+  padding: 2rem 0;
+}
+
+// Paragraphs
+p {
+  font-family: 'Montserrat';
+}
+
+.paragraph {
+  font-family: 'Montserrat';
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  color: $color-white-t6;
+
+  margin-bottom: 1.3em;
+}

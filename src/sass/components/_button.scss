@@ -1,0 +1,31 @@
+@use '../abstracts' as *;
+
+.btn {
+  display: inline-block;
+  padding: 1.7em 4.8em;
+  border-radius: 100px;
+
+  font-family: 'Quadrat';
+  font-size: 1.3rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+  transition: all 0.4s;
+
+  &:hover {
+    box-shadow: 0 0 20px $color-btnshadow;
+  }
+
+  &--primary {
+    color: $color-white;
+    background-color: $color-primary;
+  }
+
+  &--secondary-w {
+    border: 1px solid $color-white-t3;
+  }
+
+  &--secondary-g {
+    border: 1px solid $color-secondary;
+    background-color: transparent;
+  }
+}

@@ -1,0 +1,82 @@
+@use '../abstracts' as *;
+
+@keyframes testimonialsTurn3d {
+  0%,
+  17.5% {
+    transform: translateZ(-350px) rotateY(0);
+  }
+  27.5%,
+  45% {
+    transform: translateZ(-350px) rotateY(-120deg);
+  }
+  55%,
+  72.5% {
+    transform: translateZ(-350px) rotateY(-240deg);
+  }
+  82.5%,
+  100% {
+    transform: translateZ(-350px) rotateY(-360deg);
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+// FEATURES ICON ANIMATION
+@keyframes rainDrop {
+  0% {
+    transform: translateY(-2px);
+    opacity: 0;
+  }
+  2% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+}
+@keyframes cameraFlash {
+  from {
+    width: 70px;
+    height: 70px;
+    opacity: 0.6;
+    background: radial-gradient(
+      circle,
+      rgba($color-white, 0.5) 2%,
+      rgba($color-white, 0.8) 27%,
+      rgba($color-white, 0.8) 54%,
+      rgba(252, 254, 249, 0.8) 75%,
+      rgba(225, 244, 200, 0.5) 100%
+    );
+  }
+  to {
+    width: 30px;
+    height: 30px;
+    opacity: 0;
+  }
+}
+
+@keyframes clockHandsTurn {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes clockUpandDown {
+  0% {
+    transform: translateY(-2px);
+  }
+  100% {
+    transform: translateY(2px);
+  }
+}

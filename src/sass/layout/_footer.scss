@@ -1,0 +1,149 @@
+@use '../abstracts' as *;
+
+.title {
+  display: inline-block;
+  font-family: 'Montserrat';
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+
+  &--g {
+    color: rgba($color-secondary, 0.78);
+  }
+  &--w {
+    color: rgba($color-white, 0.8);
+  }
+}
+
+.footer {
+  padding: 6rem 7rem;
+  color: $color-white-t6;
+  background-size: 2px 100%, 100% 2px, 2px 100%, 100% 2px;
+  background-position: 0 0, 0 0, 100% 0%, 0 100%;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(0deg, transparent),
+    // left
+    linear-gradient(
+        90deg,
+        transparent 5%,
+        $color-grey 5%,
+        $color-grey 95%,
+        transparent 95%
+      ),
+    // top
+    linear-gradient(180deg, transparent),
+    // right
+    linear-gradient(
+        270deg,
+        transparent 5%,
+        $color-grey 5%,
+        $color-grey 95%,
+        transparent 95%
+      )
+      // bottom
+;
+
+  &__inner {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    & > .col:nth-child(1) {
+      gap: 2rem;
+
+      .nav {
+        padding-left: 5rem;
+        gap: 8rem;
+
+        &__list {
+          gap: 1rem;
+
+          a:link,
+          a:visited {
+            font-family: inherit;
+            font-weight: 300;
+            font-size: 1.2rem;
+            line-height: 1.2;
+            color: #ffffff99;
+            transition: all 0.4s;
+          }
+
+          a:hover,
+          a:active {
+            color: darken($color-white-t6, 10%);
+          }
+        }
+      }
+    }
+    & > .col:nth-child(2) {
+      flex-basis: 27%;
+      padding-top: 2.25rem;
+      gap: 3.6rem;
+
+      .form {
+        label {
+          display: hidden;
+        }
+
+        input {
+          font-family: 'Montserrat';
+          background: $color-input;
+          border-radius: 20px;
+          border: none;
+          outline: none;
+          padding: 1.2rem 1.5rem;
+          padding-right: 3.3rem;
+          color: $color-white;
+          display: block;
+          flex: 1;
+
+          &::placeholder {
+            font-weight: 300;
+            font-family: inherit;
+            font-size: 13px;
+            line-height: 16px;
+            color: $color-white-t5;
+          }
+        }
+
+        &__button {
+          outline: none;
+          border: none;
+          border-radius: 50%;
+          width: 25px;
+          height: 25px;
+          background: rgba($color-secondary, 0.56);
+          margin-left: -3rem;
+          cursor: pointer;
+        }
+      }
+
+      .socials {
+        &__icons {
+          gap: 3rem;
+
+          svg {
+            path {
+              transition: all 0.4s;
+            }
+          }
+          a:hover path,
+          a:active path {
+            fill: $color-primary;
+          }
+        }
+      }
+    }
+  }
+
+  &__logo-box {
+    mix-blend-mode: lighten;
+    a {
+      height: 100%;
+    }
+  }
+  &__logo {
+    display: block;
+    height: 100%;
+    object-fit: cover;
+  }
+}

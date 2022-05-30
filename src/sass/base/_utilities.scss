@@ -1,0 +1,38 @@
+// FLEX
+.flex {
+  display: flex;
+
+  &-ac-jc {
+    justify-content: center;
+    align-items: center;
+  }
+  &-ac {
+    align-items: center;
+  }
+  &-jc {
+    justify-content: center;
+  }
+}
+
+.flex--c {
+  display: flex;
+  flex-direction: column;
+
+  &-ac-jc {
+    justify-content: center;
+    align-items: center;
+  }
+  &-ac {
+    align-items: center;
+  }
+  &-jc {
+    justify-content: center;
+  }
+}
+
+// Making items kinda responsive and not letting them touch the sides of the screen
+.container {
+  width: 85%;
+  max-width: 1200px;
+  margin: 0 auto;
+}

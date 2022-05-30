@@ -1,0 +1,14 @@
+@use 'variables' as *;
+
+@mixin greenHue {
+  &::after {
+    content: '';
+    position: absolute;
+    background: $bg-hue;
+    opacity: 0.2;
+    filter: blur(60px);
+    width: 550px;
+    height: 375px;
+    border-radius: 50%;
+  }
+}
