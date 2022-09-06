@@ -1,4 +1,4 @@
-# Vector Website
+# Vector (not responsive)
 
 This is a website for 'Vector' an advanced home robot.
 
