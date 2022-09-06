@@ -1,6 +1,6 @@
 # Vector Website
 
-This is my 15th project which is a website for 'Vector' an advanced home robot.
+This is a website for 'Vector' an advanced home robot.
 
 (The design is by Yana Razumovska)
 
